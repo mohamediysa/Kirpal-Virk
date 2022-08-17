@@ -63,3 +63,16 @@ comment.addEventListener('click',()=>{
        	hire.removeAttribute("required");
     }
 })
+
+document.querySelector('#resume').addEventListener('mouseover',()=>{
+  document.querySelector('#hash1').style.visibility = 'visible'
+})
+document.querySelector('#resume').addEventListener('mouseout',()=>{
+  document.querySelector('#hash1').style.visibility = 'hidden'
+})
+document.querySelector('#contact').addEventListener('mouseover',()=>{
+  document.querySelector('#hash2').style.visibility = 'visible'
+})
+document.querySelector('#contact').addEventListener('mouseout',()=>{
+  document.querySelector('#hash2').style.visibility = 'hidden'
+})
