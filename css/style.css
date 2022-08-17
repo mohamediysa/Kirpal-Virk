@@ -95,6 +95,7 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	min-height: 100vh;
 }
 .main_info_container .max_wi{
 	display: grid;
