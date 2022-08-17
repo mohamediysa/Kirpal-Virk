@@ -86,7 +86,9 @@ body{
 	color: black;
 	transition: .2s;
 }
-
+#hash1,#hash2{
+	visibility: hidden;
+}
 /* media query  */
 @media (max-width: 600px){
 	.header .sub_header_container{
