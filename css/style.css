@@ -11,6 +11,7 @@
 }
 body{
 	font-family: 'Altform';
+	font-size: 1.1rem;
 }
 /*first section*/
 .header{
@@ -71,8 +72,9 @@ body{
 .header .sub_header_container .actions a{
 	text-decoration: none;
 	padding: 10px;
-	background: #393e46;
-	color: white;
+	/* background: #393e46;
+	color: white; */
+	color: #393e46;
 	border-radius: 20px;
 	width: 45%;
 	text-align: center;
@@ -80,8 +82,11 @@ body{
 	transition: .2s;
 }
 .header .sub_header_container .actions a:hover{
-	background: #222831;
+	/* background: #222831; */
+	color: black;
+	transition: .2s;
 }
+
 /* media query  */
 @media (max-width: 600px){
 	.header .sub_header_container{
@@ -120,14 +125,22 @@ body{
 	padding: 20px;
 	text-align: center;
 	border-radius: 20px;
+	transition: .2s;
+}
+.main_info_container .max_wi .col div:hover{
+	border-radius: 5px;
 }
 .main_info_container .max_wi .col article{
-	text-align: justify;
+	text-align: left;
 }
 .main_info_container .max_wi .col table{
 	text-transform: capitalize;
 	display: inline-table;
-	width: 70%;
+	width: 100%;
+}
+.main_info_container .max_wi .col table tbody{
+	display: flex;
+	flex-direction: column;
 }
 .main_info_container .max_wi .col table tr{
 	padding: 10px 0;
@@ -143,6 +156,7 @@ body{
 	align-items: center;
 }
 
+/*section for education informations*/
 .education_container{
 	height: 100vh;
 	padding: 20px;
@@ -160,8 +174,7 @@ body{
 	background: #ffffff3d;
 	border-radius: 20px;
 	display: flex;
-	box-shadow: 2px 2px 5px gray;
-
+	box-shadow: 2px 2px 3px gray;
 }
 .education_container .info h2{
 	text-transform: capitalize;
@@ -178,6 +191,10 @@ body{
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
+	transition: .2s;
+}
+.education_container .info .info_head:hover{
+	border-radius: 5px 0 0 5px;
 }
 .education_container .info .info_body{
 	width: 70%;
@@ -211,6 +228,10 @@ body{
 	color: #393e46;
 	padding: 20px;
 	border-radius: 20px;
+	transition: .2s;
+}
+.contact_form_container form:hover{
+	border-radius: 5px;
 }
 .contact_form_container form label{
 	text-align: left;
