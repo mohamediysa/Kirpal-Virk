@@ -72,8 +72,6 @@ body{
 .header .sub_header_container .actions a{
 	text-decoration: none;
 	padding: 10px;
-	/* background: #393e46;
-	color: white; */
 	color: #393e46;
 	border-radius: 20px;
 	width: 45%;
@@ -82,7 +80,6 @@ body{
 	transition: .2s;
 }
 .header .sub_header_container .actions a:hover{
-	/* background: #222831; */
 	color: black;
 	transition: .2s;
 }
@@ -93,7 +90,11 @@ body{
 @media (max-width: 600px){
 	.header .sub_header_container{
 		flex-direction: column;
-	}	
+	}
+	.header .sub_header_container .actions{
+		flex-direction: column;
+}
+
 }
 
 /*infography second section*/
